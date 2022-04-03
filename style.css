@@ -140,6 +140,7 @@ section.zone_recherche {
   width: 200px;
   font-size: large;
   font-weight: bold;
+  background-color: white;
 }
 .zone_recherche_formulaire_input::placeholder {
   color: var(--couleur-ecriture);
