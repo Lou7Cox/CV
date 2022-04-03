@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html lang="fr"><!-- Debut hypertext markup language -->
+
+
+<!-- Debut Structure Minimale --> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04b5a3f05a.js"></script>
+    <style media="all" id="fa-v4-font-face"></style><style media="all" id="fa-v4-shims">      
+    </style><style media="all" id="fa-main"></style>
+    <title>Booki - Openclassrooms - Briscan</title>
+
+  </head>
+<!-- Fin Structure Minimale --> 
+
+
+<!-- Debut du corps de page --> 
+  <body> 
+  <!-- Debut du bloc_page -->
+    <div class="bloc_page"> 
+
+      <header class="header">
+        <img class="logo" src="images/logo/booki.png" alt="logo">
+
+        <nav class="menu">
+          <div class="nav1">
+            <p><a class="hebergements" href="#hebergements">Hébergements</a></p>
+          </div>
+          <div class="nav2">
+            <p><a class="activites" href="#activites">Activités</a></p>
+          </div>
+
+        </nav>
+      </header>
+
+
+
+<!-- Debut, Centre de la page -->
+      <main>
+        <section class="zone_recherche">
+          <h1 class="zone_recherche_titre">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="zone_recherche_texte">
+            En plein centre ville ou en pleine nature
+          </p>
+
+<!--FORMULAIRE-->
+          <form class="zone_recherche_formulaire" method="post" action="traitement.php">
+            <div class="geolocalisation">
+              <button class="gps"><em class="fas fa-map-marker-alt" aria-hidden="true"></em></button>
+            </div>
+
+            <input class="zone_recherche_formulaire_input" type="search" name="ville" id="ville" placeholder="Marseille, France">
+
+            <button class="zone_recherche_bouton" type="submit">
+              &nbsp;&nbsp; 
+              <span class="rechercher">Rechercher</span>
+              <span class="recherche"><em class="fas fa-search" aria-hidden="true"></em></span>&nbsp;&nbsp;
+            </button>
+
+<!-- Filtres-->
+            <div class="conteneur_filtres">
+              <div class="filtres"><strong>Filtres </strong></div>
+              <div class="filtres-boutons">
+                <button class="filtre-bouton">
+                  <i class="fas fa-money-bill-wave" aria-hidden="true"></i> Économique
+                </button>
+
+                <button class="filtre-bouton">
+                  <i class="fas fa-child" aria-hidden="true"></i> Familial
+                </button>
+
+                <button class="filtre-bouton">
+                  <i class="fas fa-heart" aria-hidden="true"></i> Romantique
+                </button>
+
+                <button class="filtre-bouton">
+                  <i class="fas fa-dog" aria-hidden="true"></i> Animaux autorisés
+                </button>
+              </div>
+            </div>
+          </form>
+<!-- Debut icone information -->
+          <p class="icone">
+            <span class="fa-stack">
+              <em class="far fa-circle fa-stack-2x" aria-hidden="true"></em>
+              <em class="fas fa-info fa-stack-1x" aria-hidden="true"></em></span>
+
+            <span class="information-texte">Plus de 500 logements sont disponibles dans cette ville</span>
+          </p>
+        </section>
+<!--Fin icone information --> 
+
+<!-- Debut Hebergements a Marseille-->
+<!-- Carte 1 sur 6 : Hebergements a Marseille-->
+        <div class="conteneur_hebergements_marseille">
+          <section class="hebergements_marseille">
+            <h2 class="titre_hebergements_marseille" id="titre_hebergements_marseille">
+              Hébergements à Marseille
+            </h2>
+
+            <div class="conteneur_cartes_hebergements"> 
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Auberge la Cannebière</h3>
+                        Nuit à partir de <b>25€</b>
+                      </div>                      
+                      <div class="etoiles_grises_hebergements_marseille">                        
+                        <span class="etoiles_bleus">                          
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>                      
+                        </span>
+                        <span class="etoilesgrises">                          
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+<!-- Carte 2 sur 6 : Hebergements a Marseille-->
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="
+        Hôtel du port">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Hôtel du port</h3>
+                        Nuit à partir de 52<b>€</b>
+                      </div>
+                      
+                      <div class="etoiles_grises_hebergements_marseille">
+                        <div class="etoiles_bleus">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </a>
+              </article>
+<!-- Carte 3 sur 6 : Hebergements a Marseille-->
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Hôtel les mouettes</h3>
+                        Nuit à partir de 76<b>€</b>
+                      </div>
+                      <div class="etoiles_grises_hebergements_marseille">
+                        <span class="etoiles_bleus">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em></span>
+                          <span class="etoilesgrises">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+<!-- Cartes 4 sur 6 : Hebergements a Marseille-->
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Hôtel de la mer</h3>
+                        Nuit à partir de 46<b>€</b>
+                      </div>
+                      <div class="etoiles_grises_hebergements_marseille">
+                        <span class="etoiles_bleus">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                        <span class="etoilesgrises">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+<!-- Carte 5 sur 6 : Hebergements a Marseille-->
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Auberge Le Panier</h3>
+                        Nuit à partir de <b>23€</b>
+                      </div>
+                      <div class="etoiles_grises_hebergements_marseille">
+                        <span class="etoiles_bleus">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                        <span class="etoilesgrises">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+<!-- Carte 6 sur 6 : Hebergements a Marseille-->
+              <article class="cartes_marseille">
+                <a href="#">
+                  <div>
+                    <picture>
+                      <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                    </picture>
+                    <div>
+                      <div class="nom_hebergement_marseille">
+                        <h3>Hôtel chez Amina</h3>
+                        Nuit à partir de 96<b>€</b>
+                      </div>
+                      <div class="etoiles_grises_hebergements_marseille">
+                        <div class="etoiles_bleus">
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                          <em class="fas fa-star" aria-hidden="true"></em>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <a href="#"><div class="afficher_plus"><strong>Afficher plus</strong></div></a>
+          </section>
+<!--Fin Hebergements a Marseille -->
+     
+<!-- Debut Hebergements Populaires -->
+          <aside class="hebergements_populaires"> 
+            <h2 class="titre_hebergements_populaires"> 
+              <strong>Les plus populaires </strong>
+              <em class="fas fa-chart-line" aria-hidden="true"></em>
+            </h2>
+
+            <div class="conteneur_cartes_populaires"> 
+<!-- Carte 1 sur 3 : Hebergements Populaires-->
+              <a href="#">
+                <div class="cartes_populaires"> 
+                  <picture>
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
+                  </picture>
+                  <div class="legendes">
+                    <div class="nom_hebergement_populaire">
+                      <strong>Hôtel Le soleil du matin </strong>
+                      <br>Nuit à partir de 128<b>€</b>
+                    </div>
+                    <div class="etoiles_grises_hebergements_populaires">
+                    <div class="etoiles_bleus">
+                      <em class="fas fa-star" aria-hidden="true"></em>
+                      <em class="fas fa-star" aria-hidden="true"></em>
+                      <em class="fas fa-star" aria-hidden="true"></em>
+                      <em class="fas fa-star" aria-hidden="true"></em>
+                      <em class="fas fa-star" aria-hidden="true"></em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+<!-- Carte 2 sur 3 : Hebergements Populaires-->
+              <a href="#">
+                <div class="cartes_populaires">
+                  <picture>
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes">
+                  </picture>
+                  <div class="legendes">
+                    <div class="nom_hebergement_populaire">
+                      <strong> Au cœur de l'eau Chambres d'hôtes </strong>
+                      <br>Nuit à partir de 71<b>€</b>
+                    </div>
+                    <div class="etoiles_grises_hebergements_populaires">
+                      <span class="etoiles_bleus">
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                      </span>
+                      <span class="etoilesgrises">
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a> 
+<!-- Carte 3 sur 3 : Hebergements Populaires-->
+              <a href="#">
+                <div class="cartes_populaires">
+                  <picture>
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                  </picture>
+                  <div class="legendes">
+                    <div class="nom_hebergement_populaire">
+                      <strong> Hôtel Tout bleu et Blanc </strong>
+                      <br>
+                      Nuit à partir de 68<b>€</b>
+                    </div>
+                    <br>
+                    <div class="etoiles_grises_hebergements_populaires">
+                      <span class="etoiles_bleus">
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                      </span>
+                      <span class="etoilesgrises">
+                        <em class="fas fa-star" aria-hidden="true"></em>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </aside>
+        </div>
+<!-- Fin Hebergements Populaires -->
+
+<!-- Debut Activites a Marseille -->
+        <section class="activites_marseille"> 
+          <h2 id="act" class="titre_activites_marseille">Activités à Marseille</h2> 
+
+          <div class="conteneur_activites_marseille"> 
+<!-- Carte 1 sur 6 : Activites a Marseille-->
+            <div class="conteneur_cartes_activites_marseille cartes_activites_marseille carte_activite_marseille_unite_1">
+
+              <a href="#">
+                <picture>
+                  <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                </picture>
+                <div class="legendes">
+                  <p>
+                    <strong>Vieux Port</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+            
+<!-- Carte 2 sur 6 : Activites a Marseille-->
+            <div class="conteneur_cartes_activites_marseille carte_activite_marseille_unite_2_3"> 
+              <div class="cartes_activites_marseille carte_activite_marseille_unite_2">
+                <a href="#">
+                  <picture>
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                  </picture>
+                  <div class="legendes">
+                    <p>
+                      <strong> Fort de Pomègues</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+<!-- Carte 3 sur 6 : Activites a Marseille-->
+              <div class="cartes_activites_marseille carte_activite_marseille_unite_3">
+                <a href="#">
+                  <picture>
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles de Frioul">
+                  </picture>
+                  <div class="legendes">
+                    <p>
+                      <strong>Îles du Frioul</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+<!-- Carte 4 sur 6 : Activites a Marseille-->
+            <div class="conteneur_cartes_activites_marseille cartes_activites_marseille carte_activite_marseille_unite_4">
+              <a href="#">
+                <picture>
+                  <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                </picture>
+                <div class="legendes">
+                  <p>
+                    <strong>Parc National des Calanques</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+
+<!-- Carte 5 sur 6 : Activites a Marseille-->
+            <div class="conteneur_cartes_activites_marseille carte_activite_marseille_unite_5_6">
+              <div class="cartes_activites_marseille carte_activite_marseille_unite_5">
+                <a href="#">
+                  <picture>
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                  </picture>
+                  <div class="legendes">
+                    <p>
+                      <strong>Notre-Dame-de-la-Garde</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+<!-- Carte 6 sur 6 : Activites a Marseille-->
+              <div class="cartes_activites_marseille carte_activite_marseille_unite_6">
+                <a href="#">
+                  <picture>
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                  </picture>
+                  <div class="legendes">
+                    <p>
+                      <strong>Parc Longchamp</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- Fin Activités à Marseille -->
+      </main>
+<!-- Fin Centre de la page -->
+<!-- Debut Pied de page -->
+      <footer class="footer">
+        <div class="pied_page_1">
+          <h3 class="pied_page_1">A propos</h3>
+          <a href="#"><p class="pied_page_1">Fonctionnement du site</p></a>
+          <a href="#"><p class="pied_page_1">Conditions générales de vente</p></a>
+          <a href="#"><p class="pied_page_1">Données et confidentialité</p></a>
+          <br>
+        </div>
+
+        <div class="pied_page_2">
+          <h3 class="pied_page_2">Nos hébergements</h3>
+          <a href="#"><p class="pied_page_2">Charte qualité</p></a>
+          <a href="#"><p class="pied_page_2">Soumettre votre hôtel</p></a>
+          <br>
+        </div>
+
+        <div class="pied_page_3">
+          <h3 class="pied_page_3">Assistance</h3>
+          <a href="#"><p class="pied_page_3">Centre d'aide</p></a>
+          <a href="#"><p class="pied_page_3">nous contacter</p></a>
+          <br>
+        </div>
+      </footer>
+<!-- Fin du Pied de page -->      
+    </div>
+<!-- Fin du bloc_page -->  
+</body>
+<!-- Fin du corps de page --> 
+</html>
