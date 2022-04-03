@@ -132,7 +132,6 @@ nav .menu {
 section.zone_recherche {
   margin: 2vw 3vw;
 }
-
 .zone_recherche_formulaire_input {
   border: 1px solid var(--encarts-couleur-interieur);
   height: 45px;
@@ -140,6 +139,7 @@ section.zone_recherche {
   width: 200px;
   font-size: large;
   font-weight: bold;
+  background-color: white;
 }
 .zone_recherche_formulaire_input::placeholder {
   color: var(--couleur-ecriture);
@@ -147,7 +147,7 @@ section.zone_recherche {
 .gps {
   border: none;
   border-radius: 10px 10px;
-  color: none;
+  background-color: none;
 }
 
 .zone_recherche_bouton {
