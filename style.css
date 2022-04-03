@@ -67,7 +67,7 @@ a:hover
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .logo {
