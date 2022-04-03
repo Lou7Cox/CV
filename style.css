@@ -144,10 +144,10 @@ section.zone_recherche {
 .zone_recherche_formulaire_input::placeholder {
   color: var(--couleur-ecriture);
 }
-
 .gps {
   border: none;
   border-radius: 10px 10px;
+  color: none;
 }
 
 .zone_recherche_bouton {
