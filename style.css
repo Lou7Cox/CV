@@ -248,11 +248,11 @@ div .geolocalisation {
 .fa-circle {
   color: var(--couleur-bordure-filtres);
 }
-
 .icone {
   font-weight: lighter;
   display: grid;
   grid-template-columns: 50px 1fr;
+  align-items: center;
 }
 
 /* 4b) Filtres : Mise en forme des filtres pour mobile et tablette */
