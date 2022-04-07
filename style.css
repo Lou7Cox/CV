@@ -53,8 +53,8 @@ div .nav2 {
   padding: 32px 18px 18px 32px;
 }
 
-div .nav1:hover,
-div .nav2:hover
+div .nav1 a:hover,
+div .nav2 a:hover
 {
   border-top: 2px solid var(--icone-couleur-interieur);
   padding-top: 46px;
