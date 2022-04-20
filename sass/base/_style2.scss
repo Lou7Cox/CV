@@ -1,0 +1,234 @@
+// Mise en forme, animations Page 2 : En-tête, 4 Menus
+
+// Corps de page : 
+// police d'écriture, 
+// couleurs arriere plan, liens
+body {
+    background-color: $arriereplan2; 
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .arriere_plan {
+    background-color: $arriereplan1;
+  }
+  
+  a {
+    color: $noir;
+    text-decoration: none;
+    &:visited {
+      color: $noir;
+    }
+  }
+// Mise en forme, En-tête, icone Fleche : retour page accueil 
+  .fa-arrow-left {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: medium;
+  }
+  // Mise en forme, En-tête : Banniere image, Nom du restaurant
+  .restaurant {
+    & img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__nom {
+      border-top-left-radius: 40px 40px;
+      border-top-right-radius: 40px 40px;
+      transform: translateY(-80px);
+      margin-bottom: -80px;
+      padding: 5px $marge_centre_page;
+      background-color: $arriereplan1;
+      font-family: shrikhand, cursive;
+      font-size: medium;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  // Mise en forme, section Menu : esperluette parent-enfants, flexbox
+  .menu {
+    & h3 {
+      padding-bottom: 0px;
+      margin: 0 $marge_centre_page;
+    }
+    & h4,
+    & p {
+      padding: 0.25rem $marge_centre_page;
+    }
+    & h4 {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      font-size: medium;
+// Faire apparaître trois points de suspension, sans retour à la ligne
+      white-space: nowrap; /*sans retour à la ligne*/
+      text-overflow: ellipsis; /* trois points de suspension */
+      overflow: hidden; /* cache, le texte hors conteneur*/
+    }
+    & p {
+      margin-bottom: 5px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;
+  }
+
+// Mise en forme, section Menu : Titres entrées, plats, desserts
+  .souligner_titre_carte {
+    width: 40px;
+    height: 0.25em;
+    background-color: $tertiaire;
+    margin: 0;
+    padding: 0;  
+    margin-left: $marge_centre_page;
+  }
+
+  // Animation, transition Centre de la page : apparition du Menu du restaurant,
+  // @Mixins.scss, @include
+  // Flexbox 
+  .menu__carte_entrees {
+    @include cartes_animation;
+  }
+  .menu__carte_plats {
+    @include cartes_animation;
+    & .carte {
+      animation-delay: 500ms;
+    }
+  }
+  .menu__carte_desserts {
+    @include cartes_animation;
+    & .carte {
+      animation-delay: 1s;
+    }
+  }
+  
+  .carte {
+    @include cartes_animation;  
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 2000ms;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &__texte {
+      display: flex;
+      flex: 100%;
+      white-space: nowrap; 
+      flex-direction: column;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      transition: all $transition_timing_fonction;
+
+      &__description {
+        flex: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & p {
+          margin-top: 2px;
+          overflow: hidden;
+          white-space: nowrap; 
+        }
+
+        &__ingredients {
+          text-overflow: ellipsis;
+        }
+
+        &__prix {
+          font-weight: bold;
+        }
+      }
+    }
+// Mise en forme : icône de validation des cartes du Menu 
+    &__validee {
+      flex: 0%;
+      color: $arriereplan1;
+      background-color: $tertiaire;
+      font-size: xx-large;
+      text-align: center;
+      height: 2.1em; 
+      line-height: 2.1em; 
+      white-space: nowrap; 
+      border-top-right-radius: 20px 20px;
+      border-bottom-right-radius: 20px 20px;
+      transform: translateX(100px);
+      cursor: pointer;
+      transition: all $transition_timing_fonction;
+    }
+// Ouverture à 25% : conteneur de validation
+    &:hover > &__validee {
+      flex: 25%;
+      transform: translateX(0px);
+      background-color: $tertiaire;
+      cursor: pointer;
+      color: $arriereplan1;
+    }
+// Fermeture à 75% : conteneur texte
+    &:hover > &__texte {
+      flex: 75%;
+    }
+// Rotation à 0 Degrés : icône de validation des cartes du Menu 
+    &:hover .fa-check-circle {
+      transform: rotate(0deg);
+    }
+  }
+// Rotation à 359 Degrés : icône de validation des cartes du Menu 
+  .fa-check-circle {
+    transform: rotate(359deg);
+    transition: transform $transition_timing_fonction;
+  }
+// Mise en forme : bouton violet 
+// Fonctionne avec le Partiel [_btn.scss]
+  .btn {
+    width: 400px;
+    align-self: center;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+// Media queries, point de rupture ordinateur 1024px
+@media screen and (min-width: $point_rupture) {
+    .menu {
+      display: grid;  
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      & h3 {
+        margin: 0 1rem;
+      }
+      & h4,
+      & p {
+        padding: 0.25rem 1rem;
+      }
+    }
+
+    .souligner_titre_carte {
+      margin-left: 1rem;
+    }
+    .carte {
+      max-width: 310px;  
+      &__texte {
+        padding: 0px;
+      }
+      &__validee {
+        height: 70px;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .carte {
+      max-width: 300px;
+    }
+  }
+  .bouton {
+    display: flex;
+    justify-content: center;
+  }
+  
