@@ -1,0 +1,27 @@
+// Mise en forme section : Boutons violets
+.btn {
+  background: linear-gradient(170deg, $secondaire, $principale);
+  color: $blanc;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 7vw;
+  box-shadow: 4px 4px 2px $ombre;
+  width: 60vw;
+  max-width: 250px;
+  align-self: center;
+  transition: 250ms;
+  cursor: pointer;
+// Bouton violet, apparence au survole : dégradé de couleurs
+  &:hover {
+    background: linear-gradient(
+      170deg,
+      rgba(255, 121, 218, 0.8) 0%,
+      rgba(214, 108, 219, 0.8) 39%,
+      rgba(171, 94, 220, 0.8) 85%,
+      rgba(155, 89, 220, 0.8) 100%
+    );
+    box-shadow: 8px 8px 2px $ombre_sombre;
+  }
+}
