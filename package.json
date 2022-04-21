@@ -72,7 +72,11 @@
   },
   "scripts": {
     "sass": "sass ./main1.scss:./main1.css ./main2.scss:./main2.css -w",
-    "prefix": "postcss ./main1.css ./main2.css --use autoprefixer --replace"    
+    "prefix": "postcss ./main1.css ./main2.css --use autoprefixer --replace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lou7Cox/ohmyfood.git"
   },
   "author": "",
   "license": "ISC"

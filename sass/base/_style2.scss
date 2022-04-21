@@ -24,7 +24,7 @@ body {
 // Mise en forme, En-tête, icone Fleche : retour page accueil 
   .fa-arrow-left {
     position: relative;
-    top: 20px;
+    top: 30px;
     right: 45px;
     font-size: medium;
   }
@@ -224,7 +224,7 @@ body {
   }
   @media screen and (min-width: 1280px) {
     .carte {
-      max-width: 300px;
+      max-width: 400px;
     }
   }
   .bouton {
