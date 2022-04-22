@@ -11,7 +11,7 @@
     padding: 0px;
 // Mise en forme, Conteneur icône coeur au clique : à plein
   &:hover {
-      background: linear-gradient(to bottom left, $principale, $secondaire);
+      background: linear-gradient(to bottom left, $principale -70%, $secondaire);
       font-size: large;
       transform: scale(2);
       -webkit-background-clip: text;

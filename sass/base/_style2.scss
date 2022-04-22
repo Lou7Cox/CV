@@ -13,21 +13,22 @@ body {
   .arriere_plan {
     background-color: $arriereplan1;
   }
+
   
-  a {
-    color: $noir;
-    text-decoration: none;
-    width:100%;
-    &:visited {
-      color: $noir;
-    }
-  }
 // Mise en forme, En-tête, icone Fleche : retour page accueil 
   .fa-arrow-left {
     position: relative;
     top: 30px;
     right: 45px;
     font-size: medium;
+    color: $noir;
+    text-decoration: none;
+  & a {      
+      width:100%;
+      &:visited {
+        color: $noir;
+      }
+    }
   }
   // Mise en forme, En-tête : Banniere image, Nom du restaurant
   .restaurant {
@@ -53,6 +54,11 @@ body {
   
   // Mise en forme, section Menu : esperluette parent-enfants, flexbox
   .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;    
+  }
+  .menu {
     & h3 {
       padding-bottom: 0px;
       margin: 0 $marge_centre_page;
@@ -73,11 +79,8 @@ body {
     & p {
       margin-bottom: 5px;
     }
-    display: flex;
-    flex-direction: column;
-    padding: 0 0vw;
-  }
-
+  }   
+  
 // Mise en forme, section Menu : Titres entrées, plats, desserts
   .souligner_titre_carte {
     width: 40px;
@@ -200,6 +203,7 @@ body {
       display: grid;  
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
+      width:100%;
       & h3 {
         margin: 0 1rem;
       }
@@ -213,7 +217,7 @@ body {
       margin-left: 1rem;
     }
     .carte {
-      max-width: 310px;  
+      max-width: 300px;  
       &__texte {
         padding: 0px;
       }
@@ -224,7 +228,7 @@ body {
   }
   @media screen and (min-width: 1280px) {
     .carte {
-      max-width: 400px;
+      max-width: 310px;
     }
   }
   .bouton {

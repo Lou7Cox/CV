@@ -135,7 +135,7 @@ footer {
   padding: 0px;
 }
 .fa-stack :nth-child(2):hover {
-  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background: linear-gradient(to bottom left, #9356dc -70%, #ff79da);
   font-size: large;
   transform: scale(2);
   -webkit-background-clip: text;
@@ -177,11 +177,12 @@ body {
   background: #f6f6f6;
 }
 
-a {
+.section_restaurants a {
   color: #000;
   text-decoration: none;
+  width: 100%;
 }
-a:visited {
+.section_restaurants a:visited {
   color: #000;
 }
 
@@ -371,20 +372,19 @@ body {
   background-color: #f6f6f6;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-  width: 100%;
-}
-a:visited {
-  color: #000;
-}
-
 .fa-arrow-left {
   position: relative;
   top: 30px;
   right: 45px;
   font-size: medium;
+  color: #000;
+  text-decoration: none;
+}
+.fa-arrow-left a {
+  width: 100%;
+}
+.fa-arrow-left a:visited {
+  color: #000;
 }
 
 .restaurant img {
@@ -411,6 +411,7 @@ a:visited {
   flex-direction: column;
   padding: 0 0vw;
 }
+
 .menu h3 {
   padding-bottom: 0px;
   margin: 0 5vw;
@@ -592,6 +593,7 @@ a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    width: 100%;
   }
   .menu h3 {
     margin: 0 1rem;
@@ -605,7 +607,7 @@ a:visited {
   }
 
   .carte {
-    max-width: 310px;
+    max-width: 300px;
   }
   .carte__texte {
     padding: 0px;
@@ -616,7 +618,7 @@ a:visited {
 }
 @media screen and (min-width: 1280px) {
   .carte {
-    max-width: 400px;
+    max-width: 310px;
   }
 }
 .bouton {

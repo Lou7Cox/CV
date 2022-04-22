@@ -19,14 +19,15 @@
     background: $arriereplan1;
   }
 // Mise en forme : Lien, pseudo-selecteur 
+.section_restaurants
   a {
     color: $noir;
     text-decoration: none;
+    width:100%;
     &:visited {
       color: $noir;
     }
-  }
-  
+  }  
 // Section locatisation du visiteur : flexbox
   .section_localisation {
     padding: 0 5vw;
