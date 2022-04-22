@@ -17,7 +17,7 @@
 header,
 main,
 footer {
-  animation-name: opacity;
+  animation-name: opacite;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
   animation-delay: 0s;
@@ -25,7 +25,7 @@ footer {
   animation-fill-mode: forwards;
 }
 
-@keyframes opacity {
+@keyframes opacite {
   from {
     opacity: 0;
   }
@@ -43,11 +43,12 @@ footer {
 }
 
 .loader_cercles::before {
+  content: "";
   position: relative;
   top: 25%;
   bottom: 50%;
   right: 50%;
-  left: 42%;
+  left: 40%;
   background: url(./images/logo/ohmyfood@2x.svg) no-repeat 1px center;
 }
 
@@ -55,32 +56,36 @@ footer {
 .loader_cercles::before {
   content: "";
   position: absolute;
-  animation: lignes linear infinite;
+  animation-name: lignes;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: infinite;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   border-radius: 50px;
-  animation-fill-mode: both;
   border: 6px solid transparent;
   width: 198px;
   height: 180px;
-  color: #000;
 }
 
 .loader_cercles::before {
-  animation-duration: 15s;
+  content: "";
   border-right-color: #9356dc;
 }
 
 .loader_cercles::before {
-  animation-duration: 15s;
+  content: "";
   border-bottom-color: #ff79da;
 }
 
 .loader_cercles::before {
-  animation-duration: 15s;
+  content: "";
   border-left-color: #99e2d0;
 }
 
 .loader_cercles::before {
-  animation-duration: 15s;
+  content: "";
   border-top-color: #9356dc;
 }
 
