@@ -85,8 +85,9 @@
     }
   }
 // Section fonctionnement : Mise en forme 3 ronds violets 
-  .bouton_violet {
+  .bouton_violet:hover {
     background-color: lighten($principale, 35%);
+    cursor:pointer;
   }
   .fa-store {
     color: $principale;
@@ -158,8 +159,7 @@
         position: absolute;
         height: 2.5em;
         line-height: 0.7em; 
-        white-space: nowrap;
-        left: 2%;         
+        white-space: nowrap;                
       }
     }
     &__legende {
@@ -200,7 +200,7 @@
       margin: 1rem;
       margin-bottom: 3rem;
       &__img {
-        max-width: 500px;
+        max-width: 100%;
       }
     }
   }

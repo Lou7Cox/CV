@@ -17,6 +17,7 @@ body {
   a {
     color: $noir;
     text-decoration: none;
+    width:100%;
     &:visited {
       color: $noir;
     }
@@ -108,7 +109,6 @@ body {
   
   .carte {
     @include cartes_animation;  
-    margin: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
