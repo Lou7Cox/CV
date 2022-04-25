@@ -1,12 +1,18 @@
 // Mise en forme : chemins d'accès au fichiers partiels 
 // Liste : importation, fichiers partiels
+
+// Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
-@import "./sass/utilitaires/variables";
-@import "./sass/mises_en_pages/header"; 
-@import "./sass/composantes/loader";
-@import "./sass/utilitaires/mixins"; // Cartes : propriétés et animations 
-@import "./sass/composantes/bouton"; 
-@import "./sass/composantes/coeur"; 
-@import "./sass/mises_en_pages/footer"; 
+// Base
 @import "./sass/base/style1";
 @import "./sass/base/style2";
+// Composantes
+@import "./sass/composantes/bouton";
+@import "./sass/composantes/coeur";
+@import "./sass/composantes/loader";
+// Mises_en_pages
+@import "./sass/mises_en_pages/footer"; 
+@import "./sass/mises_en_pages/header";
+// Utilitaires
+@import "./sass/utilitaires/mixins"; // Cartes : propriétés et animations 
+@import "./sass/utilitaires/variables";
