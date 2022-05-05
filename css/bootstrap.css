@@ -103,8 +103,7 @@ sub {
 }
 
 img {
-    border: 0;    
-
+    border: 0
 }
 
 svg:not(:root) {
@@ -1428,9 +1427,7 @@ figure {
 }
 
 img {
-    vertical-align: middle;
-    width: 200px;
-    margin: 0 auto;
+    vertical-align: middle
 }
 
 .carousel-inner>.item>a>img,
@@ -2069,14 +2066,7 @@ pre code {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px; 
-}
-.blur{
-    backdrop-filter:blur(40px);
-    border: 5px ridge rgba(243, 151, 108,.5);
-    border-radius: 10px 10px;  
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-left: 15px
 }
 
 .col-xs-1,
@@ -2314,7 +2304,7 @@ pre code {
         float: left
     }
     .col-sm-12 {
-        width: 100%;        
+        width: 100%
     }
     .col-sm-11 {
         width: 91.66666667%
