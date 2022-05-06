@@ -4296,7 +4296,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid; /*valeur précédente : border-top: 4px solid/9;*/
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4383,7 +4383,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* manquant : [;]*/
 }
 
 .open>.dropdown-menu {
@@ -4432,7 +4432,7 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid; /*valeur précédente : border-bottom: 4px solid/9;*/
 }
 
 .dropup .dropdown-menu,
