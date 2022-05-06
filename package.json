@@ -1,0 +1,19 @@
+{
+  "name": "briscan_irvin_p4_code",
+  "version": "1.0.0",
+  "description": "\"L'Agence la Panthère, Lyon\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lou7Cox/panthere.lyon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lou7Cox/panthere.lyon/issues"
+  },
+  "homepage": "https://github.com/Lou7Cox/panthere.lyon#readme"
+}
