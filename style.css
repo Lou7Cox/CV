@@ -772,7 +772,7 @@ h4 {
 
 .black-background {
     backdrop-filter: blur(40px); /*background-color: rgba(165, 147, 99, 0.7);*/
-    padding: 40px 40px 40px 40px;
+    padding: 5px 5px 5px 5px;
     border: 5px ridge rgb(243, 151, 108);
     border-radius: 10px 10px;
 }
