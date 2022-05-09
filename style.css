@@ -1171,7 +1171,9 @@ label{
 .col-sm-6{
     padding: 0 30px;
 }
-
+img.col-sm-6 {
+    cursor: pointer;
+}
 .contact-a{
     font-size: 18px;
 }
