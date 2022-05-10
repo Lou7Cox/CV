@@ -1173,8 +1173,7 @@ label{
 }
 img.col-sm-6{
     cursor: pointer;
-    width:100%;
-    max-width:370px;
+    width:50%;
     object-fit: cover;
 }
 .contact-a{
