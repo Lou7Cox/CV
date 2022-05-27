@@ -2,7 +2,7 @@ body{
    background-image:none;
 }
 .page{
-   margin:0px 10%;
+   margin:0px 5%;
    padding:0px;
    Border:5px solid navy;
    Border-radius:10px;
@@ -20,6 +20,11 @@ body{
    font-weigth:normal;
    font-size:20px;
    font-family:'source sans Pro', calibri, thahoma, sans-serif;
+   
+}
+#infophoto-gauche a{
+   text-decoration:none;
+
 }
 #info-gauche p{
    margin:left;
